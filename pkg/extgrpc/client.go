@@ -31,6 +31,7 @@ func EndpointGroupGRPCOpts() []grpc.DialOption {
   "retryPolicy": {
     "maxAttempts": 3,
     "initialBackoff": "0.1s",
+    "MaxBackoff": "0s",
     "backoffMultiplier": 2,
     "retryableStatusCodes": [
   	  "UNAVAILABLE"
